@@ -1,0 +1,90 @@
+.jumbotron {
+  padding-top: 40px;
+  background-color: rgb(19, 19, 19);
+}
+
+.rounded-circle {
+  border: 3px solid #ff1100;
+}
+.navbar {
+  opacity: 0.8;
+}
+.bi {
+  color: #2b28ff;
+}
+.bi:hover {
+  opacity: 0.7;
+}
+.li1 {
+  padding-bottom: 15px;
+}
+#about {
+  text-align: justify;
+  text-indent: 25px;
+}
+.navbar-nav {
+  padding-left: 20px;
+}
+.navbar-brand:hover {
+  color: #c4c4c4;
+  transition: 1s;
+}
+.navbar-nav a:hover {
+  background-color: #ff3c2e;
+}
+button.navbar-toggler:hover {
+  color: #322fff;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("Orbitron-VariableFont_wght.ttf") format(truetype);
+}
+
+.display-4 {
+  font-family: "Orbitron";
+  font-size: 30px;
+  color: #ff1100;
+}
+.lead {
+  font-family: sans-serif;
+  font-size: 30px;
+}
+.lead2 {
+  font-size: 18px;
+  color: #ff1100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contack {
+  background-color: #858585;
+}
+#css_margin {
+  background: #f3f3f3;
+}
+#footer {
+  background-color: #dddddd;
+}
+.footer a {
+  text-decoration: none;
+  color: #333333;
+  transition: all 0.5s ease-in-out;
+}
+.footer ul li a:hover {
+  color: #2b28ff;
+  text-decoration: underline;
+  padding-left: 8px;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li {
+  list-style: none;
+  font-size: 13px;
+}
+.text-position {
+  padding-left: 30px;
+}
+.bi-c-circle-fill {
+  color: #191919;
+}
