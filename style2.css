@@ -1,23 +1,25 @@
 .jumbotron {
-  padding-top: 40px;
   background-color: rgb(19, 19, 19);
+  padding-top: 50px;
 }
 
 .rounded-circle {
-  border: 3px solid #ff1100;
+  border: 3px solid #bebebe;
 }
+
 .navbar {
   opacity: 0.8;
+  padding: 5px;
 }
+
 .bi {
-  color: #2b28ff;
+  color: #e0e0e0;
+  padding: 5px;
 }
 .bi:hover {
   opacity: 0.7;
 }
-.li1 {
-  padding-bottom: 15px;
-}
+
 #about {
   text-align: justify;
   text-indent: 25px;
@@ -39,7 +41,9 @@ button.navbar-toggler:hover {
   font-family: "Orbitron";
   src: url("Orbitron-VariableFont_wght.ttf") format(truetype);
 }
-
+ul li .nav {
+  display: inline;
+}
 .display-4 {
   font-family: "Orbitron";
   font-size: 30px;
@@ -87,4 +91,11 @@ ul li {
 }
 .bi-c-circle-fill {
   color: #191919;
+}
+.bi-laptop {
+  color: #191919;
+  margin-left: -14px;
+}
+.sosmed ul li {
+  display: block;
 }
