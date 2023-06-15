@@ -1,10 +1,10 @@
 .jumbotron {
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(41, 41, 41);
   padding-top: 55px;
 }
 
 .rounded-circle {
-  border: 3px solid #bebebe;
+  border: 3px solid #ffffff;
 }
 
 .navbar {
@@ -29,12 +29,12 @@
 }
 .navbar-brand {
   font-family: "KaushanScript";
-  color: #ff3c2e;
+  color: #ffffff;
   font-size: 17px;
   font-weight: bold;
 }
 .navbar-brand:hover {
-  color: #c4c4c4;
+  color: #b4b4b4;
   transition: 1s;
 }
 .navbar-nav a:hover {
@@ -53,6 +53,7 @@ ul li .nav {
 .display-4 {
   font-size: 40px;
   color: #ff1100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .lead {
   font-family: sans-serif;
@@ -63,7 +64,7 @@ ul li .nav {
   color: #ff1100;
   font-family: Helvetica;
 }
-.contack {
+#project {
   background-color: #858585;
 }
 #css_margin {
