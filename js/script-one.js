@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+  once: true,
+});
 //////////////////////////
 const scriptURL = "https://script.google.com/macros/s/AKfycbxlQcrWpCVIelk_bfnAzElACLyJXJk3FGncE67G0qhBgopQaPbeFtzF-ZP2QeAxC1My/exec";
 const form = document.forms["submit-to-google-sheet"];
