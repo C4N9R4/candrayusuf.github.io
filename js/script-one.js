@@ -1,8 +1,10 @@
+AOS.init();
+//////////////////////////
 const scriptURL = "https://script.google.com/macros/s/AKfycbxlQcrWpCVIelk_bfnAzElACLyJXJk3FGncE67G0qhBgopQaPbeFtzF-ZP2QeAxC1My/exec";
 const form = document.forms["submit-to-google-sheet"];
-const btnKirim = document.querySelectorAll(".btn-kirim")[0];
-const btnLoading = document.querySelectorAll(".btn-loading")[0];
-const alertForm = document.querySelectorAll(".alert-form")[0];
+const btnKirim = document.querySelector(".btn-kirim");
+const btnLoading = document.querySelector(".btn-loading");
+const alertForm = document.querySelector(".alert-form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
