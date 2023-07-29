@@ -27,3 +27,21 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+/////////////////////////////
+gsap.from(".jumbotron img ", {
+  y: -200,
+  duration: 1.5,
+  ease: "bounce.out",
+  opacity: 0,
+});
+gsap.from(".navbar", {
+  duration: 2,
+  ease: "back-out(1.7)",
+  y: -300,
+  opacity: 0,
+});
+gsap.from(".Myheading", {
+  duration: 1,
+  rotateY: 660,
+  opacity: 0,
+});
