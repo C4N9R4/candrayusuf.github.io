@@ -35,6 +35,7 @@ p {
   height: 500px;
   cursor: pointer;
   transform-style: preserve-3d;
+  overflow: hidden;
 }
 .tools-box::before {
   content: "BLUETOOTH";
