@@ -19,6 +19,97 @@ p {
 #project {
   background-color: #ffeeba;
 }
+/* /////////////////////////// */
+.card .pProject {
+  font-family: "Gill-sans";
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+/* /////////////////////////////// */
+
+/* //////My tools section/////////*/
+.tools-box {
+  position: relative;
+  background-color: #ffc107;
+  border-radius: 5px;
+  height: 500px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+.tools-box::before {
+  content: "BLUETOOTH";
+  position: absolute;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+.tools-box:hover::before {
+  opacity: 0.3;
+}
+.tools-box::after {
+  content: "PRODUCT";
+  position: absolute;
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 450px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.tools-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.3;
+}
+.tools-name {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 70px);
+}
+.tools-box:hover .tools-name {
+  top: 20px;
+  opacity: 1;
+}
+.tools-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.tools-box:hover .tools-btn {
+  opacity: 1;
+  bottom: 0;
+}
+.speaker-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 350px;
+  transform: translate3d(-50%, -52%, 100px);
+  transition: 0.5s;
+  z-index: 8;
+}
+.tools-box:hover .speaker-img {
+  transform: translate3d(-50%, -52%, 100px) rotate(-5deg) scale(1.2);
+}
+/* ///////////////////////////// */
 footer a {
   text-decoration: none;
   transition: 1s;

@@ -45,3 +45,21 @@ gsap.from(".Myheading", {
   rotateY: 660,
   opacity: 0,
 });
+/////////////////////////////
+
+//////Vanila javascript//////////
+VanillaTilt.init(document.querySelectorAll(".tools-box")[0], {
+  max: 30,
+  speed: 300,
+  glare: true,
+});
+VanillaTilt.init(document.querySelectorAll(".tools-box")[1], {
+  max: 30,
+  speed: 300,
+  glare: true,
+});
+VanillaTilt.init(document.querySelectorAll(".tools-box")[2], {
+  max: 30,
+  speed: 300,
+  glare: true,
+});
