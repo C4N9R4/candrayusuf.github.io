@@ -29,6 +29,20 @@ p {
   font-family: "Calibri";
 }
 /* /////////////////////////////// */
+.img-anything {
+  width: 40px;
+  height: 40px;
+  margin-left: 100px;
+}
+.img-js {
+  width: 40px;
+  height: 40px;
+  margin-left: 100px;
+  border: 1px solid rgb(194, 194, 0);
+}
+.progress {
+  min-height: 50px;
+}
 
 /* //////My tools section/////////*/
 .tools-box {
