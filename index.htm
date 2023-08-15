@@ -31,8 +31,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Projects</a>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#project">My Project</a></li>
+                <li><a class="dropdown-item" href="#image3D">image 3D</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -48,9 +53,6 @@
       <img src="img/cdr.jpg" alt="My picture candra" width="180" class="rounded-circle" />
       <h3 class="display-4 text-warning Myheading">I'm Candra Yusuf Irawan</h3>
       <p class="lead text-center fs-5 Myparaf">Programmer Front End</p>
-      <!-- <hr class="my-4" />
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -60,6 +62,7 @@
       </svg>
     </div>
     <!-- Last-Jumbotron -->
+
     <!-- About -->
     <section id="about" class="about">
       <div class="container">
@@ -77,13 +80,7 @@
             </p>
           </div>
 
-          <!-- <div class="col-md-2 text-end">
-           
-            
-            
-           
-           
-          </div> -->
+          <!-- <div class="col-md-2 text-end"></div> -->
           <div class="col-md-5" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
             <div class="progress mb-2">
               <div class="progress-bar bg-warning text-center" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
@@ -187,7 +184,7 @@
             </div>
           </div>
 
-          <div class="col-md-8 mb-3">
+          <div class="col-md-8 mb-3" data-aos="flip-down" data-aos-delay="1300">
             <div class="card">
               <div class="text-card">
                 <p class="pProject text-center">Project Terbaru</p>
@@ -198,12 +195,12 @@
         </div>
       </div>
 
-      <div id="audios-mouse" class="audios-mouse">
+      <div id="image3D" class="image3D">
         <div class="container">
           <div class="row text-center mt-5 mb-3">
             <div class="col">
               <h2>Efek 3D</h2>
-              <p class="text-center">Arahkan tanda panah mouse anda pada image 3D yang ada dibawah ini atau jika anda menggunakan android bisa tekan langsung</p>
+              <p class="text-center">Arahkan kursor anda ke arah object image 3D yang ada di bawah ini</p>
             </div>
           </div>
 
