@@ -9,9 +9,13 @@ body {
   font-family: "Trirong";
   font-size: 2.5em;
 }
-p {
+.pLanding {
   text-align: justify;
   text-indent: 27px;
+}
+.pLanding-dua {
+  text-align: left;
+  font-size: 13px;
 }
 .jumbotron {
   padding-top: 5rem;
