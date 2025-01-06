@@ -2,6 +2,11 @@ AOS.init({
   once: true,
 });
 //////////////////////////
+// let prf = {
+//   pf1 = "Saya Candra Yusuf Irawan Lulusan Sarjana Komputer Universitas Borobudur jakarta tahun 2022. Memiliki kemampuan dalam membuat tampilan depan website menggunakan HTML, CSS, dan javascript dengan framework bootstrap. Selain sayamampu membuat website, saya juga memiliki pengetahuan dalam menggunakan sofware corelDraw dan AdobePhotoshop.";
+// };
+// document.getElementById("#paraf").innerHTML = prf.pf1;
+//////////////////////////
 const scriptURL = "https://script.google.com/macros/s/AKfycbxlQcrWpCVIelk_bfnAzElACLyJXJk3FGncE67G0qhBgopQaPbeFtzF-ZP2QeAxC1My/exec";
 const form = document.forms["submit-to-google-sheet"];
 const btnKirim = document.querySelector(".btn-kirim");
