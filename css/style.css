@@ -9,9 +9,13 @@ body {
   font-family: "Trirong";
   font-size: 2.5em;
 }
-.pLanding {
+
+.txt-one {
+  font-style: italic;
   text-align: justify;
-  text-indent: 27px;
+}
+.txt-two {
+  text-align: justify;
 }
 .pLanding-dua {
   text-align: left;
@@ -147,5 +151,5 @@ footer .names {
   font-size: 30px;
 }
 section {
-  padding-top: 60px;
+  padding-top: 50px;
 }
