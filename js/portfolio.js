@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       body: new FormData(form)
     })
     .then(response => {
-      // btnLoading.classList.add("d-none");
+      //btnLoading.classList.add("d-none");
       // btnKirim.classList.remove("d-none");
       btnLoading.classList.remove("d-none");
     btnKirim.classList.add("d-none");
