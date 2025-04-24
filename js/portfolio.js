@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const btnKirim = document.querySelector('.btn-kirim');
   const btnLoading = document.querySelector('.btn-loading');
-  const form = document.querySelector('form');
+  const form = document.querySelector('.form');
 
   form.addEventListener("submit", function(e) {
     e.preventDefault(); // Supaya tidak reload halaman
