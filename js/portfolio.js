@@ -1,34 +1,43 @@
 AOS.init({
   once: true,
 });
-//////////////////////////
-document.addEventListener("DOMContentLoaded", function(){
+//////////////////////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", function() {
 
-const btnKirim = document.querySelector('btnKirim');
-const btnLoading = document.querySelector('.btn-Loading');
-const alertSucces = document.getElementById("thanks");
-const form = document.querySelector('form');
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const form = document.querySelector('form');
 
-form.addEventListener("submit", function(e){
-    fetch(form.action,{
-      method: 'POST',
-      body: new FormData(form),
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // Supaya tidak reload halaman
+    
+    // Tampilkan loading, sembunyikan tombol kirim
+    btnLoading.classList.remove("d-none");
+    btnKirim.classList.add("d-none");
 
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form)
     })
-      .then(response => {
-        btnLoading.classList.add("d-none");
-        btnKirim.classList.remove('d-none');
-        alertSucces.classList.remove('d-none');
-        form.reset();
-      })
-      .catch(error => console.error('Error:', error));
+    .then(response => {
+      btnLoading.classList.add("d-none");
+      btnKirim.classList.remove("d-none");
+
+      if (response.ok) {
+        alert("Pesan berhasil dikirim!");
+        form.reset(); // Reset form setelah submit
+      } else {
+        alert("Gagal mengirim pesan.");
+      }
+    })
+    .catch(error => {
+      btnLoading.classList.add("d-none");
+      btnKirim.classList.remove("d-none");
+      alert("Terjadi kesalahan: " + error.message);
+    });
+  });
 });
-});
-form.addEventListener("submit", function(e)  {
-  btnLoading.classList.remove("d-none");
-  btnKirim.classList.add("d-none");
-})
-/////////////////////////////
+/////////////////////////////////////////////////////////////////
 gsap.from(".jumbotron img ", {
   y: -200,
   duration: 1.5,
