@@ -3,14 +3,15 @@ AOS.init({
 });
 //////////////////////////
 document.addEventListener("DOMContentLoaded", function(){
-const form = document.querySelector('form');
+
 const btnKirim = document.querySelector('btnKirim');
 const btnLoading = document.querySelector('.btn-Loading');
 const alertSucces = document.getElementById("thanks");
+const form = document.querySelector('form');
 
 form.addEventListener("submit", function(e){
     fetch(form.action,{
-      method: 'POST'
+      method: 'POST',
       body: new FormData(form),
 
     })
@@ -23,7 +24,7 @@ form.addEventListener("submit", function(e){
       .catch(error => console.error('Error:', error));
 });
 });
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", function(e)  {
   btnLoading.classList.remove("d-none");
   btnKirim.classList.add("d-none");
 })
