@@ -12,17 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
     e.preventDefault(); // Supaya tidak reload halaman
     
     // Tampilkan loading, sembunyikan tombol kirim
-    
+    btnLoading.classList.remove("d-none");
+    btnKirim.classList.add("d-none");
 
     fetch(form.action, {
       method: "POST",
       body: new FormData(form)
     })
     .then(response => {
-      //btnLoading.classList.add("d-none");
-      // btnKirim.classList.remove("d-none");
-      btnLoading.classList.remove("d-none");
-    btnKirim.classList.add("d-none");
+      
+      btnLoading.classList.add("d-none");
+      btnKirim.classList.remove("d-none");
 
       if (response.ok) {
         alert("Pesan berhasil dikirim!");
