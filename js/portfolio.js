@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const btnLoading = document.querySelector('.btn-loading');
   const form = document.querySelector('.form');
 
-  form.addEventListener("submit", function(e) {
+  form.addEventListener("submit", async function(e) {
     e.preventDefault(); // Supaya tidak reload halaman
     
     // Tampilkan loading, sembunyikan tombol kirim
