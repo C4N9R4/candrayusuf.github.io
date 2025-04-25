@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       if (response.ok) {
         alert("Pesan berhasil dikirim!");
-        //form.reset(); // Reset form setelah submit
+        form.reset(); // Reset form setelah submit
       } else {
         alert("Gagal mengirim pesan.");
       }
