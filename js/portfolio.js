@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const btnKirim = document.querySelector('.btn-kirim');
   const btnLoading = document.querySelector('.btn-loading');
   const form = document.querySelector('.form');
-
+/////////////////////////////
   form.addEventListener("submit", async function(e) {
     e.preventDefault(); // Supaya tidak reload halaman
     
@@ -38,6 +38,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+///////////////////////////////////////////
+document.getElementById("success-alert").classList.remove("d-none");
+setTimeout(() => {
+  document.getElementById("success-alert").classList.add("d-none");
+}, 3000); 
+
 /////////////////////////////////////////////////////////////////
 gsap.from(".jumbotron img ", {
   y: -200,
