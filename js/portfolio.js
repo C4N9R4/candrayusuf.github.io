@@ -4,15 +4,15 @@ AOS.init({
 //////////////////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function() {
 
-  // const btnKirim = document.querySelector('.btn-kirim');
-  // const btnLoading = document.querySelector('.btn-loading');
+  const btnKirim = document.querySelector('.btn-kirim');
+   const btnLoading = document.querySelector('.btn-loading');
   const form = document.querySelector('.form');
 /////////////////////////////
   form.addEventListener("submit", async function(e) {
     e.preventDefault(); // Supaya tidak reload halaman
     
     // Tampilkan loading, sembunyikan tombol kirim
-    // btnLoading.classList.remove("d-none");
+     btnLoading.classList.remove("d-none");
      btnKirim.classList.add("d-none");
 
     fetch(form.action, {
