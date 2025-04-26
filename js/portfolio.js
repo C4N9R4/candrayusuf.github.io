@@ -2,42 +2,42 @@ AOS.init({
   once: true,
 });
 //////////////////////////////////////////////////////////////
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
 
-  const btnKirim = document.querySelector('.btn-kirim');
-   const btnLoading = document.querySelector('.btn-loading');
-  const form = document.querySelector('.form');
-/////////////////////////////
-  form.addEventListener("submit", async function(e) {
-   //e.preventDefault(); // Supaya tidak reload halaman
+//   const btnKirim = document.querySelector('.btn-kirim');
+//    const btnLoading = document.querySelector('.btn-loading');
+//   const form = document.querySelector('.form');
+// /////////////////////////////
+//   form.addEventListener("submit", async function(e) {
+//    //e.preventDefault(); // Supaya tidak reload halaman
     
-    // Tampilkan loading, sembunyikan tombol kirim
-     btnLoading.classList.remove("d-none");
-     btnKirim.classList.add("d-none");
+//     // Tampilkan loading, sembunyikan tombol kirim
+//      btnLoading.classList.remove("d-none");
+//      btnKirim.classList.add("d-none");
 
-    fetch(form.action, {
-      method: "POST",
-      body: new FormData(form)
-    })
-     .then(response => {
+//     fetch(form.action, {
+//       method: "POST",
+//       body: new FormData(form)
+//     })
+//      .then(response => {
       
-      btnLoading.classList.add("d-none");
-       btnKirim.classList.remove("d-none");
+//       btnLoading.classList.add("d-none");
+//        btnKirim.classList.remove("d-none");
 
-      if (response.ok) {
-        alert("Pesan berhasil dikirim!");
-        form.reset(); // Reset form setelah submit
-      } else {
-        alert("Gagal mengirim pesan.");
-      }
-    })
-    .catch(error => {
-       btnLoading.classList.add("d-none");
-       btnKirim.classList.remove("d-none");
-      alert("Terjadi kesalahan: " + error.message);
-    });
-  });
-});
+//       if (response.ok) {
+//         alert("Pesan berhasil dikirim!");
+//         form.reset(); // Reset form setelah submit
+//       } else {
+//         alert("Gagal mengirim pesan.");
+//       }
+//     })
+//     .catch(error => {
+//        btnLoading.classList.add("d-none");
+//        btnKirim.classList.remove("d-none");
+//       alert("Terjadi kesalahan: " + error.message);
+//     });
+//   });
+// });
 ///////////////////////////////////////////
 
 
