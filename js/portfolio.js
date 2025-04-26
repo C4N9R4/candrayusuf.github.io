@@ -4,37 +4,48 @@ AOS.init({
 //////////////////////////////////////////////////////////////
 
 document.addEventListener("DOMContentLoaded", function () {//tunggu semua element HTML siap dulu
-  const btnkirim = document.querySelector('.btn-kirim');//ambil tombol kirim, tombol loading, dan form kedalam variabel
-  const textKirim = document.querySelector('.text-kirim');
-const spinner = btnKirim.querySelector('.spinner-grow');
+  const btnKirim = document.querySelector('.btn-kirim');//ambil tombol kirim, tombol loading, dan form kedalam variabel
+  const btnLoading = document.querySelector('.btn-loading');
+  const form = document.getElementById('form');
 
   //ketika form disubmit
   form.addEventListener("submit", async function(e){
     e.preventDefault();//agar form tidak reload otomatis, tampilkan loading sembunyikan tombol kirim 
-   
-  // Tampilkan spinner, sembunyikan text
-  textKirim.classList.add("d-none");
-  spinner.classList.remove("d-none");
+     // 1. Sembunyikan tombol Kirim
+  btnKirim.classList.add('d-none');
+  
+  // 2. Tampilkan tombol Loading
+  btnLoading.classList.remove('d-none');
     //////////////////////////////
+
+   
     try{
       const response = await fetch('https://formsubmit.co/98candrayusuf@gmail.com', {
         method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
         body: new FormData(form)
       });
     //Setelah kirim, kembalikan tombol seperti semula
-    textKirim.classList.remove("d-none");
-    spinner.classList.add("d-none");
+    btnLoading.classList.add('d-none');
+    btnKirim.classList.remove('d-none');
 
-    if (response.ok){
+    if (response.ok){  
+      setTimeout(() => {
       alert("Pesan berhasil dikirim!");
-      form.reset();//kosongkan semua input
+      form.reset();
+    }, 2000); // 2 detik
+      // alert("Pesan berhasil dikirim!");
+      
+      // form.reset();//kosongkan semua input
     }else{
       alert('Gagal mengirim pesan');
     }
     }catch(error){
       //kalau error misal internet putus
-      textKirim.classList.remove("d-none");
-    spinner.classList.add("d-none");
+      btnLoading.classList.add('d-none');
+      btnKirim.classList.remove('d-none');
       alert("Terjadi kesalahan: " + error.message);
     }
   });
