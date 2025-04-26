@@ -5,14 +5,16 @@ AOS.init({
 
 document.addEventListener("DOMContentLoaded", function () {//tunggu semua element HTML siap dulu
   const btnkirim = document.querySelector('.btn-kirim');//ambil tombol kirim, tombol loading, dan form kedalam variabel
-  const btnLoading = document.querySelector('.btn-loading');
-  const form = document.getElementById('form');
+  const textKirim = document.querySelector('.text-kirim');
+const spinner = btnKirim.querySelector('.spinner-grow');
 
   //ketika form disubmit
   form.addEventListener("submit", async function(e){
     e.preventDefault();//agar form tidak reload otomatis, tampilkan loading sembunyikan tombol kirim 
-    btnLoading.classList.remove("d-none");
-    btnkirim.classList.add("none");
+   
+  // Tampilkan spinner, sembunyikan text
+  textKirim.classList.add("d-none");
+  spinner.classList.remove("d-none");
     //////////////////////////////
     try{
       const response = await fetch('https://formsubmit.co/98candrayusuf@gmail.com', {
@@ -20,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {//tunggu semua elemen
         body: new FormData(form)
       });
     //Setelah kirim, kembalikan tombol seperti semula
-    btnLoading.classList.add('d-none');
-    btnkirim.classList.remove('d-none');
+    textKirim.classList.remove("d-none");
+    spinner.classList.add("d-none");
 
     if (response.ok){
       alert("Pesan berhasil dikirim!");
@@ -31,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {//tunggu semua elemen
     }
     }catch(error){
       //kalau error misal internet putus
-      btnLoading.classList.add('d-none');
-      btnKirim.classList.remove('d-none');
+      textKirim.classList.remove("d-none");
+    spinner.classList.add("d-none");
       alert("Terjadi kesalahan: " + error.message);
     }
   });
