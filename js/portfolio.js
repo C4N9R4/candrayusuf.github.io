@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector('.form');
 /////////////////////////////
   form.addEventListener("submit", async function(e) {
-    e.preventDefault(); // Supaya tidak reload halaman
+   //e.preventDefault(); // Supaya tidak reload halaman
     
     // Tampilkan loading, sembunyikan tombol kirim
      btnLoading.classList.remove("d-none");
