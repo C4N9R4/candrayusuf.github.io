@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {//tunggu semua elemen
 
     if (response.ok){  
       setTimeout(() => {
+        btnLoading.classList.add('d-none');
       alert("Pesan berhasil dikirim!");
       form.reset();
     }, 3000); // 2 detik
