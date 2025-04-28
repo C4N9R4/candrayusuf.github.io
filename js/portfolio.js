@@ -28,10 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {//tunggu semua elemen
         body: new FormData(form)
       });
     //Setelah kirim, kembalikan tombol seperti semula
-    btnLoading.classList.add('d-none');
+    
     btnKirim.classList.remove('d-none');
 
     if (response.ok){  
+      btnLoading.classList.add('d-none');
       setTimeout(() => {
         //btnLoading.classList.add('d-none');
       alert("Pesan berhasil dikirim!");
