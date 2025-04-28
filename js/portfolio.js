@@ -32,14 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {//tunggu semua elemen
     btnKirim.classList.remove('d-none');
 
     if (response.ok){  
-      btnLoading.classList.add('d-none');
       setTimeout(() => {
-        //btnLoading.classList.add('d-none');
+        btnLoading.classList.add('d-none');
+    }, 3000); // 3 detik
       alert("Pesan berhasil dikirim!");
       form.reset();
-    }, 3000); // 2 detik
-      // alert("Pesan berhasil dikirim!");
-      
       // form.reset();//kosongkan semua input
     }else{
       alert('Gagal mengirim pesan');
