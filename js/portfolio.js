@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {//tunggu semua elemen
       setTimeout(() => {
         btnLoading.classList.add('d-none');
     }, 3000); // 3 detik
-      alert("Pesan berhasil dikirim!");
+      alert("Pesan berhasil dikirim! ✅");
       form.reset();
       // form.reset();//kosongkan semua input
     }else{
