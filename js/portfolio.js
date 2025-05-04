@@ -29,10 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {//tunggu semua elemen
       });
     //Setelah kirim, kembalikan tombol seperti semula
     
-    btnKirim.classList.remove('d-none');
+   
 
     if (response.ok){  
       setTimeout(() => {
+        btnKirim.classList.remove('d-none');
         btnLoading.classList.add('d-none');
     }, 3000); // 3 detik
       alert("Pesan berhasil dikirim! ✅");
