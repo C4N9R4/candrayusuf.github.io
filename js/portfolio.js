@@ -28,7 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {//tunggu semua elemen
         body: new FormData(form)
       });
     //Setelah kirim, kembalikan tombol seperti semula
-    
+    btnKirim.classList.add('d-none');
+    btnLoading.classList.remove('d-none');
    
 
     if (response.ok){  
