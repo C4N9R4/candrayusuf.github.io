@@ -143,7 +143,7 @@ body {
   transform: translate3d(-50%, -52%, 100px) rotate(-5deg) scale(1.2);
 }
 /* ///////////////////////////// */
-footer a {
+/* footer a {
   text-decoration: none;
   transition: 1s;
 }
@@ -155,7 +155,7 @@ footer .names {
 }
 .bi-hearts {
   font-size: 30px;
-}
+} */
 section {
   padding-top: 50px;
 }
