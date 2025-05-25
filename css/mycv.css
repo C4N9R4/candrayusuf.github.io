@@ -8,6 +8,9 @@
   .title {
     border-radius: 20px;
   }
+  .addres{
+    font-size: small;
+  }
   ol li {
     list-style: none;
   }
