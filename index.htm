@@ -58,7 +58,7 @@
                <h1 class="text-warning">CANDRA YUSUF</h1>
               <p class="lead  fs-5 Myparaf text-white">I'm a Junior Fullstack specializing in building responsive website</p>
             <div class="btn-group">
-               <a href="" class="btn  btn-warning text-dark">SEE PROJECTS</a>
+               <a href="" class="btn  btn-warning text-dark">PROJECT</a>
            </div>
               <div class="btn-group btn-hire">
                <a href="CV-work.html" class="btn btn-outline-light">Hire Me</a>
@@ -93,21 +93,22 @@
 
         <div class="row justify-content-around fs-6">
           <div class="col-md-6" data-aos="flip-left" data-aos-duration="1000">
-            <p class="txt-one">
-              <br />
-              I am Candra Yusuf Irawan, a computer systems graduate from Borobudur University, class of twenty twenty-two. I specialize in creating websites using the Bootstrap framework. I am proficient in HTML, CSS, SASS, JavaScript and
-              can adapt my skills to meet company needs or business needs.
-            </p>
-            <p class="txt-two">
-              Saya Candra Yusuf Irawan lulusan sistem komputer Universitas Borobudur angkatan 2022. Saya berspesialisasi dalam membuat situs web menggunakan kerangka Bootstrap. Saya mahir dalam HTML, CSS, SASS, JavaScript dan dapat
-              menyesuaikan keterampilan saya untuk memenuhi kebutuhan perusahaan atau kebutuhan bisnis.
-            </p>
-            
-            <br>
-            <div class="my-img text-center">
-              <img src="img/mypic.jpg" alt="my image" class="rounded-circle " width="100">
+            <div class="circle circle-1">
+              <img src="img/mymodel.png" alt="my image" class="rounded-circle " width="120" height="120">
             </div>
-            
+            <p class="txt-one">
+              I'm Candra Yusuf Irawan specialize programmer Fullstack, I have 2 years of experience Building responsive website use HTML, CSS, JavaScript with
+              the modern framework Bootstrap. Integrate contact form to submitCO using Javascript Fetch(). On my portfolio web using GreenShock animation and JavaScript for duration effects including bounce effects, and motion effects.
+            </p>
+            <p>I have ability create layout register using Figma, and security password use bscript node.JS, Express.JS. PostgreSQL as database to save the data including username and password. 
+              Additionaly, I am able to create a guest book form using PHP and MySQL. After the name, email, and message data are sent, only the admin can see the data.
+            </p>
+            <br>
+
+            <!-- <div class="my-img text-center">
+              
+            </div> -->
+
             <!-- <p class="pLanding-dua">My simple landing page, open this link <a href=" https://c4n9r4.github.io/MyLanding-website/">https://c4n9r4.github.io/MyLanding-website/</a></p> -->
           </div>
 
@@ -345,49 +346,38 @@
     <section id="contact" class="contact">
       <div class="container">
        
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row ">
+          <div class="col"  >
             <!-- action= "https://formsubmit.co/98candrayusuf@gmail.com"  -->
-             
-              <div class="card p-5">
-                <div class="card-body">
-              <h3 class="text-center"> Contact Form</h3>
-             </div>
-               <form id="form"  method="POST" action="">
+              <h3 class="text-center text-warning p-3"> Contact Form</h3>
+             </div >
+               <form id="form"  method="POST" action="" class="form-dark">
                 <!-- //////////////////////////////////////////////// -->
                 <input type="hidden" name="_captcha" value="false"> 
                  <input type="hidden" name="_next" value="https://c4n9r4.github.io/candrayusuf.github.io/"> 
                  <!-- nama lengkap -->
               <div class="mb-3" data-aos="zoom-in-right" data-aos-delay="400">
-                <label for="name" class="form-label" >Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="name" />
+                <!-- <label for="name" class="form-label" >Nama Lengkap</label> -->
+                <input type="text" class="form-control shadow-yellow input-dark" id="name" aria-describedby="name" name="name" placeholder="Your fullname"/>
               </div>
               <!-- email -->
               <div class="mb-3" data-aos="zoom-in-right" name="email" data-aos-delay="500">
-                <label for="Email" class="form-label">Email </label>
-                <input type="email" class="form-control" id="Email" aria-describedby="email" name="email" />
+                <input type="email" class="form-control shadow-yellow input-dark" id="Email" aria-describedby="email" name="email" placeholder="Input Email or telephone number"/>
               </div>
               <!-- pesan -->
               <div class="mb-3" data-aos="zoom-in-right" data-aos-delay="600">
-                <label for="pesan" class="form-label" >Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="message"></textarea>
+                <!-- <label for="pesan" class="form-label" >Pesan</label> -->
+                <textarea class="form-control shadow-yellow input-dark" id="pesan" rows="3" name="message" placeholder="Input message"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-warning btn-kirim text-dark " >Kirim</button>
+              <button type="submit" class="btn btn-warning btn-kirim text-dark " >Send</button>
               <button class="btn btn-warning btn-loading d-none text-end" type="button" disabled> 
                 <span class="spinner-grow text-secondary spinner-grow-sm text-end" role="status" aria-hidden="true"></span>
                 Loading...
               </button>
             </form>
-            </div>
+            
             <!-- <div id="thanks" class="alert alert-succes mt-3 d-none" role="alert">✅ Pesan kamu sudah terkirim!</div> -->
-          </div>
-      
-          <div class="col-md-5 text-end">
-            <img src="img/AI-1.jpg" alt="animation" width="350">
-          </div>
-
-
         </div>
       </div>
       <!-- last contact -->
