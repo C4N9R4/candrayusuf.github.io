@@ -1,0 +1,223 @@
+.input-dark {
+  background-color: #222 !important;
+  color: #fff !important;
+  border: 1px solid #ffc107;
+  caret-color: #ffc107;
+}
+
+.input-dark::placeholder {
+  color: #ecfc03;
+}
+
+.input-dark:focus {
+   border-color: #ffc107 !important;       /* Kuning Bootstrap */
+  box-shadow: 0 0 20px #ffc107 !important; /* Glow kuning */
+  outline: none !important;               /* Hapus outline biru */
+}
+
+/* Fix autofill Chrome */
+input.input-dark:-webkit-autofill,
+textarea.input-dark:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #222 inset !important;
+  -webkit-text-fill-color: #fff !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+body {
+  min-height: 1000px;
+}
+.navbar-brand {
+  font-family: "allura";
+  font-size: 1.5em;
+}
+.navbar-toggler {
+  z-index: 2;
+}
+.display-4 {
+  font-family: "Trirong";
+  font-size: 2.5em;
+}
+
+.txt-one {
+  font-style: italic;
+  text-align: justify;
+}
+.txt-two {
+  text-align: justify;
+}
+.pLanding-dua {
+  text-align: left;
+  font-size: 13px;
+}
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #121212;
+  
+}
+#project {
+  background-color: #ffa600;
+}
+.circle img{
+  border-top-left-radius: 7px;
+}
+.circle.circle-1 {
+  float: left;
+  margin: 10px;
+  shape-outside: circle();
+}
+/* /////////////////////////// */
+/* .btn-warning a {
+  text-decoration: none;
+
+  font-family: Verdana;
+} */
+/* /////////////////////////// */
+.card .pProject {
+  font-family: "Gill-sans";
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+.alert strong {
+  font-family: "Calibri";
+}
+/* /////////////////////////////// */
+.img-anything {
+  width: 40px;
+  height: 40px;
+  margin-left: 100px;
+}
+.img-js {
+  width: 40px;
+  height: 40px;
+  margin-left: 80px;
+  border: 1px solid rgb(194, 194, 0);
+}
+.progress {
+  min-height: 50px;
+}
+
+/* //////My tools section/////////*/
+.tools-box {
+  position: relative;
+  background-color: #ffc107;
+  border-radius: 5px;
+  height: 500px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.tools-box::before {
+  content: "BLUETOOTH";
+  position: absolute;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+.tools-box:hover::before {
+  opacity: 0.3;
+}
+.tools-box::after {
+  content: "PRODUCT";
+  position: absolute;
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 450px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.tools-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.3;
+}
+.tools-name {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 70px);
+}
+.tools-box:hover .tools-name {
+  top: 20px;
+  opacity: 1;
+}
+.tools-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.tools-box:hover .tools-btn {
+  opacity: 1;
+  bottom: 0;
+}
+.speaker-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 350px;
+  transform: translate3d(-50%, -52%, 100px);
+  transition: 0.5s;
+  z-index: 8;
+}
+.tools-box:hover .speaker-img {
+  transform: translate3d(-50%, -52%, 100px) rotate(-5deg) scale(1.2);
+}
+/* ///////////////////////////// */
+  .shadow-yellow {
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.6); /* kuning Bootstrap warning */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .shadow-yellow:focus {
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.9);
+    outline: none;
+  }
+
+  .form-dark input,
+.form-dark textarea {
+  background-color: #333;         /* Warna gelap */
+  color: #ffd500;                    /* Teks putih */
+  border: 1px solid #ffc107;      /* Garis kuning (opsional) */
+}
+
+.form-dark input::placeholder,
+.form-dark textarea::placeholder {
+  color: #ccc;                    /* Placeholder abu-abu */
+}
+/* footer a {
+  text-decoration: none;
+  transition: 1s;
+}
+footer a:hover {
+  opacity: 0.7;
+}
+footer .names {
+  font-family: "sofia";
+}
+.bi-hearts {
+  font-size: 30px;
+} */
+section {
+  padding-top: 50px;
+}
+#contact{
+  background-color: #333;
+}
+
